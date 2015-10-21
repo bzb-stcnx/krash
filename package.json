@@ -1,0 +1,30 @@
+{
+  "name": "krash",
+  "version": "0.0.0",
+  "description": "fluent assert for validation of invariants before assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bzb-stcnx/krash.git"
+  },
+  "keywords": [
+    "fluent",
+    "assert",
+    "assignment",
+    "validation",
+    "invariants"
+  ],
+  "author": "bzb-stcnx",
+  "license": "SEE LICENSE IN ./LICENSE",
+  "bugs": {
+    "url": "https://github.com/bzb-stcnx/krash/issues"
+  },
+  "homepage": "https://github.com/bzb-stcnx/krash#readme",
+  "devDependencies": {
+    "jasmine": "^2.3.2",
+    "mockery": "^1.4.0"
+  }
+}
