@@ -15,6 +15,17 @@ particularly helpful together with your favorite library of predicates such as
 [predicate](https://www.npmjs.com/package/predicate),
 [predicates](https://www.npmjs.com/package/predicates), ...
 
+note that it's easy to use a shorter alias for `krash.unless`, for example:
+```javascript
+var assert = require('krash').unless
+...
+var delicate = assert(suspect, isDefined, 'suspect not defined')
+...
+```
+
+`krash` also comes with a helper for throwing,
+that helps with formating the error message: `krash.now(...message)`
+
 # usage
 ## example
 ```javascript
@@ -34,7 +45,7 @@ function isDefined (val) {
 fun(undefined) // throw 'suspect not defined'
 ```
 
-## signature
+## signatures
 **krash.unless(val: `any`, predicate: `function`, ...message: `string[]`)**
 * **val** `any` the value to check against the predicate and return if valid
 * **predicate** `function` given `val`, returns a `boolean`
