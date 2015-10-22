@@ -1,6 +1,6 @@
 {
   "name": "krash",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "fluent assert for validation of invariants before assignment",
   "main": "index.js",
   "scripts": {
