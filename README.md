@@ -2,15 +2,18 @@
 fluent assert for validation of invariants before assignment.
 
 [![NPM](https://nodei.co/npm/krash.png?compact=true)](https://nodei.co/npm/krash/)
-
-[![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
-
 [![build status](https://secure.travis-ci.org/bzb-stcnx/yalookup.png)](http://travis-ci.org/bzb-stcnx/yalookup)
-
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 # motivation
-bare-bones inline assertion of invariants when assigning a value to a variable ([example](#usage))
+bare-bones inline assertion of invariants when assigning a value to a variable (detailed [example](#usage) below)
+```javascript
+var delicate = krash.unless(suspect, isDefined, 'suspect not defined')
+```
+particularly helpful together with your favorite library of predicates such as 
+[lodash/Lang](https://www.npmjs.com/package/lodash),
+[predicate](https://www.npmjs.com/package/predicate),
+[predicates](https://www.npmjs.com/package/predicates), ...
 
 # usage
 ## example
@@ -18,6 +21,7 @@ bare-bones inline assertion of invariants when assigning a value to a variable (
 var krash = require('krash')
 
 function fun (suspect) {
+  // assert the invariants:
   // assign suspect to delicate if defined, otherwise throw 'suspect not defined'
   var delicate = krash.unless(suspect, isDefined, 'suspect not defined')
 }
@@ -46,7 +50,7 @@ to generate the error message
 
 
 # status
-stable
+[![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
 # license
 (C) Copyright 2015, bzb-stcnx,
