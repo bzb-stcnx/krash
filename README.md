@@ -2,7 +2,7 @@
 fluent assert for validation of invariants before assignment.
 
 [![NPM](https://nodei.co/npm/krash.png?compact=true)](https://nodei.co/npm/krash/)
-[![build status](https://secure.travis-ci.org/bzb-stcnx/yalookup.png)](http://travis-ci.org/bzb-stcnx/yalookup)
+[![build status](https://secure.travis-ci.org/bzb-stcnx/krash.png)](http://travis-ci.org/bzb-stcnx/krash)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 # motivation
